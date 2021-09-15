@@ -1,0 +1,43 @@
+<students>
+	<student>
+		<id>1</id>
+                <name> jhon doe </name>
+		<address>
+                <house>38</house>
+                <road> 3 </road>
+                <flat>  </flat>
+                <location>banani,dhaka</location>
+                </address>
+		<department>sales</department>
+                <salary>20000</salary>
+	</student>
+
+        <student>
+		<id>2</id>
+                <name> mark zuckerbug </name>
+		<address>
+                <house> 20</house>
+                <road>18  </road>
+                <flat> A1 </flat>
+                <location>mirpur dhaka</location>
+                </address>
+		<department>sales</department>
+                <salary>20000</salary>
+	</student>
+
+        <student>
+		<id>3</id>
+                <name> ala voski </name>
+		<address>
+                <house> 38</house>
+                <road> 3 </road>
+                <flat>  </flat>
+                <location>motijil</location>
+                </address>
+		<department>sales</department>
+                <salary>20000</salary>
+	</student>
+
+       
+	
+</students>
