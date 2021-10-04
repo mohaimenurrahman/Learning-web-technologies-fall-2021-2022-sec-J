@@ -25,10 +25,10 @@
 		<fieldset>
 			<legend>Degree</legend>
 
-			<input type="checkbox" name="degree" value="">SSC
-			<input type="checkbox" name="degree" value="">HSC
-			<input type="checkbox" name="degree" value="">BSc
-			<input type="checkbox" name="degree" value="">MSc
+			<input type="checkbox" name="degree" value="SSC">SSC
+			<input type="checkbox" name="degree" value="HSC">HSC
+			<input type="checkbox" name="degree" value="BSc">BSc
+			<input type="checkbox" name="degree" value="MSc">MSc
 			
 		</fieldset>
 		<br>
