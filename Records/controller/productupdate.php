@@ -1,12 +1,12 @@
 <?php 
 	require_once('../model/productsModel.php');
 
-	$name 	= $_REQUEST['name'];
+	$pname 	= $_REQUEST['pname'];
 	$bprice 	= $_REQUEST['bprice'];
 	$sprice 		= $_REQUEST['sprice'];
 	$id 		= $_REQUEST['id'];
 
-	$user = ['id'=>$id, 'name'=>$name, 'bprice'=>$bprice, 'sprice'=>$sprice];
+	$user = ['id'=>$id, 'pname'=>$pname, 'bprice'=>$bprice, 'sprice'=>$sprice];
 	$status = editUser($user);
 
 	if($status){

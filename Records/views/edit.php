@@ -13,7 +13,6 @@
 </head>
 <body>
 	<center>	
-		
 		<a href="../controller/back.php"> Back</a>
 	</center>
 

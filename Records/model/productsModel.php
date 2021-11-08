@@ -32,7 +32,7 @@
 
 	function editUser($user){
 		$con = getConnection();
-		$sql= "update products set pname='{$puser['pname']}', bprice='{$user['bprice']}', sprice='{$user['sprice']}' where id={$user['id']}";
+		$sql= "update products set Name='{$user['pname']}', Buying Price='{$user['bprice']}', Selling Price='{$user['sprice']}' where id={$user['id']}";
 		
 		if(mysqli_query($con, $sql)){
 			return true;
