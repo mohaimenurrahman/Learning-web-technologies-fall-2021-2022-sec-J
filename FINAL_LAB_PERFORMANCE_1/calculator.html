@@ -3,6 +3,32 @@
 <head>  
 <title>Calculator</title>
 
+<script>  
+     
+function insert(num)   
+   {  
+   documentdocument.form1.textview.value = document.form1.textview.value + num;  
+   }  
+   
+ 
+function equal()  
+   {  
+   var exp = document.form1.textview.value;  
+   if(exp)  
+   {  
+  document.form1.textview.value = eval(exp)  
+   }  
+   }  
+     
+function backspace()  
+   {  
+   var exp = document.form1.textview.value;  
+   document.form1.textview.value = exp.substring(0, exp.length - 1);  
+   }  
+    
+  </script>  
+
+
 
 <style>  
    .formstyle  
@@ -17,25 +43,18 @@
    background-color: white;  
    } 
 
-
    input:hover  
    {  
    background-color: grey;  
    }  
+
             
-   
-   *{  
-   margin: 0;  
-   padding: 0;  
-   }  
-     
-   
    .btn{  
    width: 80px;  
    height: 60px;  
    font-size: 25px;  
    cursor: pointer;  
-   background-color: lightblue;  
+   background-color: whitesmoke;  
    color: black;  
      
    }  
@@ -70,14 +89,14 @@
       </tr>  
  
         
-       <tr>   
+      <tr>   
       <td> <input class = "btn" type = "button" value = "7" onclick = "insert(7)" > </td>  
       <td> <input class = "btn" type = "button" value = "8" onclick = "insert(8)" > </td>  
       <td> <input class = "btn" type = "button" value = "9" onclick = "insert(9)" > </td>  
       <td> <input class = "btn" type = "button" value = "X" onclick = "insert('X')" > </td>  
       </tr>  
         
-       <tr>   
+      <tr>   
       <td> <input class = "btn" type = "button" value = "4" onclick = "insert(4)" > </td>  
       <td> <input class = "btn" type = "button" value = "5" onclick = "insert(5)" > </td>  
       <td> <input class = "btn" type = "button" value = "6" onclick = "insert(6)" > </td>  
@@ -91,15 +110,15 @@
       <td> <input class = "btn" type = "button" value = "+" onclick = "insert('+')" > </td>  
       </tr>    
         
-       <tr>   
+      <tr>   
       <td> <input class = "btn" type = "button" value = "%" onclick = "insert(%)" > </td>  
       <td> <input class = "btn" type = "button" value = "0" onclick = "insert(0)" > </td>  
       <td> <input class = "btn" type = "button" value = "." onclick = "insert('.'')" > </td>  
       <td > <input class = "btn" type = "button" value = "=" onclick = "equal()"> </td>  
       </tr>  
 </table>  
-      </center>  
+   </center>  
    </div>  
-   </body>  
-   </html>  
+   </body>
+</html>  
 
