@@ -1,33 +1,9 @@
 <!DOCTYPE html> 
 <html>  
-<head>  
+<head> 
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
 <title>Calculator</title>
-
-<script>  
-     
-function insert(num)   
-   {  
-   documentdocument.form1.textview.value = document.form1.textview.value + num;  
-   }  
-   
- 
-function equal()  
-   {  
-   var exp = document.form1.textview.value;  
-   if(exp)  
-   {  
-  document.form1.textview.value = eval(exp)  
-   }  
-   }  
-     
-function backspace()  
-   {  
-   var exp = document.form1.textview.value;  
-   document.form1.textview.value = exp.substring(0, exp.length - 1);  
-   }  
-    
-  </script>  
-
 
 
 <style>  
@@ -116,7 +92,8 @@ function backspace()
       <td> <input class = "btn" type = "button" value = "." onclick = "insert('.'')" > </td>  
       <td > <input class = "btn" type = "button" value = "=" onclick = "equal()"> </td>  
       </tr>  
-</table>  
+</table>
+ <script src="calculator.js"></script>  
    </center>  
    </div>  
    </body>

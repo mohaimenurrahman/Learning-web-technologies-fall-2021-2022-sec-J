@@ -3,21 +3,41 @@
 function cal(){
 
     if(isset($_GET['='])){
-    $f_value=$_GET['f_value'];
-    $s_value=$_GET['s_value'];
+    $firstnumber=$_GET['f_value'];
+    $secondnumber=$_GET['s_value'];
     $opration=$_GET['operation']; 
-    if (is_numeric($f_value)) {
-    if (is_numeric($s_value)) {
+    if (is_numeric($firstnumber)) {
+    if (is_numeric($secondnumber)) {
     if($opration==""){
     echo "<script>alert('Choose Operation')</script>";
     exit();
      }
     else if ($opration=="+"){
-    $adding= $f_value +$s_value;
-    echo "<b>Add</b> ".$f_value."+".$s_value."= <b>". $adding."</b>";
+    $adding= $firstnumber +$secondnumber;
+    echo "<b>Add</b> ".$firstnumber."+".$secondnumber."= <b>". $adding."</b>";
     exit();
     }
-    
+    else if ($opration=="-"){
+    $sub= $firstnumber -$secondnumber;
+    echo "<b>Subtract</b> ".$firstnumber."-".$secondnumber."= <b> ". $sub."</b>";
+    exit();
+    }
+    else if ($opration=="*"){
+    $mul= $firstnumber*$secondnumber;
+    echo "<b>Multiply </b>".$firstnumber."*".$secondnumber."= <b>". $mul."</b>";
+    exit();
+    }
+   else if ($opration=="/"){
+   $div= $firstnumber /$secondnumber;
+   echo "Divide ".$firstnumber."/".$secondnumber."= ". $div;
+   exit();
+    }
+   }
+
+else{
+echo "put data";
+}
+
 }
 ?>
 
