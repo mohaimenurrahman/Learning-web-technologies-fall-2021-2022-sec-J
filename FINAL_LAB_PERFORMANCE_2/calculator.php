@@ -36,7 +36,7 @@ function cal(){
 
 else{
 echo "put data";
-}
+  }
 
 }
 ?>
