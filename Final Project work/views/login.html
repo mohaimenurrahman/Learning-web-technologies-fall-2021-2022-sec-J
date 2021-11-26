@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+fieldset {
+  background-color: #eeeeee;
+  width:70px ;
+  text-align:center;
+ 
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+  width:80px;
+
+}
+
+input {
+  margin: 10px;
+}
+</style>
+</head>
+<body>
+
+	<form method="post" action="../controller/logincheck.php">
+		<fieldset>
+			<legend>Login</legend>
+			<table>
+				<tr>
+					<td>Username:</td>
+					<td><input type="text" name="username" value=""></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="password" value=""></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="submit" value="Submit">
+						<a href="signup.html"> Signup </a>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>
