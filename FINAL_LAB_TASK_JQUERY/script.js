@@ -1,6 +1,6 @@
 "use strict"
 $(document).ready(function() {
-$("#basic-form").validate({
+$("#basic-form").click({
 rules: {
 name : {
 required: true,
@@ -63,11 +63,7 @@ required: "Please enter your photo",
 photo:"provide own photo"
 },
 
-
-
 }
-
-
 
 });
 });
